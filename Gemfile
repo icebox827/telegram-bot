@@ -1,0 +1,1 @@
+gem 'telegram-bot-ruby'
