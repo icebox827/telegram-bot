@@ -12,8 +12,9 @@ class NewsBot
       case message.text
       when '/start'
         bot.api.send_message(chat_id: message.chat.id, text: 'Welcome to Telegram-News-Bot')
-      when '/News'
-        bot.api.send_message(chat_id: message.chat.id, text: 'Welcome to https://haitireportzone.com')
+      when '/news'
+        news = News.new
+        bot.api.send_message(chat_id: message.chat.id, text: news.random_news)
       end
     end
   end
