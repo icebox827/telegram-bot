@@ -1,5 +1,6 @@
 require 'telegram/bot'
 require 'dotenv'
+Dotenv.load
 
 class NewsBot
   attr_reader :text
