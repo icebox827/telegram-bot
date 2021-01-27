@@ -1,3 +1,5 @@
+# rubocop:disable Layout/LineLength
+
 require_relative './utils'
 
 class Inspiration
@@ -26,3 +28,5 @@ class Inspiration
     Random.rand_string(@inspiration_quotes)
   end
 end
+
+# rubocop:enable Layout/LineLength
