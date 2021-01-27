@@ -1,4 +1,5 @@
 require 'telegram/bot'
+require 'motivational_quotes'
 require 'dotenv'
 Dotenv.load
 
