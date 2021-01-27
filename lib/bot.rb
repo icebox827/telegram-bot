@@ -1,3 +1,5 @@
+require_relative './news'
+require_relative './motivation'
 require 'telegram/bot'
 require 'motivational_quotes'
 require 'dotenv'
@@ -16,6 +18,9 @@ class NewsBot
       when '/news'
         news = News.new
         bot.api.send_message(chat_id: message.chat.id, text: news.random_news)
+      when '/motivation'
+        motivation = Motivation.new
+        bot.api.send_message(chat_id: message.chat.id, text: motivation)
       end
     end
   end
