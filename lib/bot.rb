@@ -1,5 +1,6 @@
 require_relative './news'
 require_relative './motivation'
+require_relative './inspiration'
 require 'telegram/bot'
 require 'motivational_quotes'
 require 'dotenv'
