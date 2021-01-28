@@ -1,4 +1,4 @@
-require_relative './utils'
+require_relative 'utils'
 
 class News
   include PickOne
@@ -13,6 +13,6 @@ class News
   end
 
   def random_news
-    Random.rand_string(@news_links)
+    PickOne.rand_string(@news_links)
   end
 end

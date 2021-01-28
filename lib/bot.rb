@@ -1,8 +1,8 @@
 # rubocop:disable Layout/LineLength
 
-require_relative './news'
-require_relative './motivation'
-require_relative './inspiration'
+require_relative 'news'
+require_relative 'motivation'
+require_relative 'inspiration'
 require 'telegram/bot'
 require 'motivational_quotes'
 require 'dotenv'
@@ -23,7 +23,7 @@ class NewsBot
         bot.api.send_message(chat_id: message.chat.id, text: news.random_news)
       when '/motivation'
         motivation = Motivation.new
-        bot.api.send_message(chat_id: message.chat.id, text: motivation)
+        bot.api.send_message(chat_id: message.chat.id, text: motivation.random_motivation)
       when '/inspiration'
         inspiration = Inspiration.new
         bot.api.send_message(chat_id: message.chat.id, text: inspiration)

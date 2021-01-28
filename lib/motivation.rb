@@ -1,4 +1,7 @@
 class Motivation
   def initialize; end
-  MotivationalQuotes::Generate.random
+
+  def random_motivation
+    MotivationalQuotes::Generate.random
+  end
 end

@@ -1,6 +1,6 @@
 # rubocop:disable Layout/LineLength
 
-require_relative './utils'
+require_relative 'utils'
 
 class Inspiration
   include PickOne
@@ -25,7 +25,7 @@ class Inspiration
   end
 
   def random_quotes
-    Random.rand_string(@inspiration_quotes)
+    PickOne.rand_string(@inspiration_quotes)
   end
 end
 
