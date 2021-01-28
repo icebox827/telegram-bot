@@ -64,7 +64,7 @@ This Bot has five commands
 
 ## Run tests
 
-- To run the rspec tests, install rspec with that command in your terminal 'gem install rspec'.
+- To run the rspec tests, install rspec with that command in your terminal `gem install rspec`.
 - Run rspec on the root folder in your terminal to check all the tests.
 
 ## Author
