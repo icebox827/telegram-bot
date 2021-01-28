@@ -39,6 +39,3 @@ DEPENDENCIES
   dotenv
   motivational_quotes (~> 0.1.2)
   telegram-bot-ruby
-
-BUNDLED WITH
-   2.2.7
