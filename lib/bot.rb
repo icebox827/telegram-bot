@@ -27,6 +27,8 @@ class NewsBot
       when '/inspiration'
         inspiration = Inspiration.new
         bot.api.send_message(chat_id: message.chat.id, text: inspiration.random_quotes)
+      when '/stop'
+        bot.api.send_message(chat_id: message.chat.id, text: 'Bye! See you again.')
       else
         bot.api.send_message(chat_id: message.chat.id, text: 'Invalid input, , Please enter /start, /stop, /news, /motivation or /inspiration')
       end
