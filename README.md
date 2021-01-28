@@ -53,6 +53,10 @@ This Bot has five commands
 
 - You can click [Here](http://t.me/Lafimen_bot)
 
+## The Telegram-news-bot video presentation live link
+
+- Video [Here](https://www.loom.com/share/fad3780f0fa24b99aad153d1629d8977)
+
 ## Built With
 
 - Ruby
