@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+
+gem 'dotenv'
+gem 'motivational_quotes', '~> 0.1.2'
+gem 'telegram-bot-ruby'

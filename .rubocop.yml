@@ -7,8 +7,6 @@ AllCops:
 
 Layout/LineLength:
   Max: 120
-Metrics/MethodLength:
-  Max: 20
 Metrics/CyclomaticComplexity:
   Max: 10
 Metrics/PerceivedComplexity:
