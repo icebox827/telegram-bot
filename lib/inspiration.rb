@@ -24,7 +24,7 @@ class Inspiration
                            'A person is a person, no matter how small. ― Dr. Seuss']
   end
 
-  def random_news
+  def random_quotes
     Random.rand_string(@inspiration_quotes)
   end
 end

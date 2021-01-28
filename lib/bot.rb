@@ -1,3 +1,5 @@
+# rubocop:disable Layout/LineLength
+
 require_relative './news'
 require_relative './motivation'
 require_relative './inspiration'
@@ -22,7 +24,14 @@ class NewsBot
       when '/motivation'
         motivation = Motivation.new
         bot.api.send_message(chat_id: message.chat.id, text: motivation)
+      when '/inspiration'
+        inspiration = Inspiration.new
+        bot.api.send_message(chat_id: message.chat.id, text: inspiration)
+      else
+        bot.api.send_message(chat_id: message.chat.id, text: 'Invalid input, , Please enter /start, /stop, /news, /motivation or /inspiration')
       end
     end
   end
 end
+
+# rubocop:enable Layout/LineLength
