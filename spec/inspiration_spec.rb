@@ -4,15 +4,15 @@ require './lib/inspiration'
 describe Inspiration do
   context '#random_quotes' do
     it 'Display random quotes' do
-      news = News.new.random_news
-      expect(news).to eq news
+      inspiration = Inspiration.new.random_quotes
+      expect(inspiration).to eq inspiration
     end
   end
 
   context '#random_quotes' do
     it 'Not display random quotes' do
-      news = News.new
-      expect(news).to_not eq News.new.random_news
+      inspiration = Inspiration.new
+      expect(inspiration).to_not eq Inspiration.new.random_quotes
     end
   end
 end
