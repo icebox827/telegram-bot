@@ -1,3 +1,5 @@
+require 'motivational_quotes'
+
 class Motivation
   def initialize; end
 

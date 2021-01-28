@@ -26,7 +26,7 @@ class NewsBot
         bot.api.send_message(chat_id: message.chat.id, text: motivation.random_motivation)
       when '/inspiration'
         inspiration = Inspiration.new
-        bot.api.send_message(chat_id: message.chat.id, text: inspiration)
+        bot.api.send_message(chat_id: message.chat.id, text: inspiration.random_quotes)
       else
         bot.api.send_message(chat_id: message.chat.id, text: 'Invalid input, , Please enter /start, /stop, /news, /motivation or /inspiration')
       end
