@@ -1,7 +1,7 @@
 require_relative './utils'
 
 class News
-  include Random
+  include PickOne
   attr_reader :news_links
 
   def initialize

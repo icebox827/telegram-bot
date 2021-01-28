@@ -3,7 +3,7 @@
 require_relative './utils'
 
 class Inspiration
-  include Random
+  include PickOne
   attr_reader :inspiration_quotes
 
   def initialize

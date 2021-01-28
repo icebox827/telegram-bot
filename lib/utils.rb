@@ -1,4 +1,4 @@
-module Random
+module PickOne
   def self.rand_string(array)
     array[rand(array.size)]
   end
