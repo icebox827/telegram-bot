@@ -5,11 +5,11 @@ class News
   attr_reader :news_links
 
   def initialize
-    @news_links = ['https://haitireportzone.com/actualite/',
-                   'https://lambinews.com/tous-nos-articles/',
-                   'https://www.juno7.ht/dernieres-nouvelles/',
-                   'https://rezonodwes.com/category/actualites/',
-                   'https://www.haitilibre.com/cat-1-politique-1.html']
+    @news_links = ['https://edition.cnn.com/world',
+                   'https://www.bbc.com/news/world',
+                   'https://www.aljazeera.com/news/',
+                   'https://listindiario.com/las-mundiales',
+                   'https://www.euronews.com/news/international']
   end
 
   def random_news
