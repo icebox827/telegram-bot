@@ -14,9 +14,7 @@ Dotenv.load
 class NewsBot
   attr_reader :text
 
-  token = '1679520179:AAF3M2uEOFIB-j6sEc4A0vmpBdYuTqF0BFE'
-
-  Telegram::Bot::Client.run(token) do |bot|
+  Telegram::Bot::Client.run(ENV['TELEGRAM_TOKEN']) do |bot|
     bot.listen do |message|
       case message.text
       when '/start'
