@@ -10,7 +10,7 @@ A Telegram Bot built with Ruby
 - You can request a quote by typing /inspiration or /motivation.
 - Or you can request news  by typing /news to have news from different website.
 
-## Install and Run the Bot Locally
+## Getting started
 
 - To run the telegram-news-bot you must have Ruby install on your computer. You can downloand and install Ruby from the link below.
 - windows [Ruby installer](https://rubyinstaller.org/).
@@ -23,7 +23,7 @@ A Telegram Bot built with Ruby
 - Run the command below in your terminal
 `git clone https://github.com/SajjadAhmad14/Telegram-bot.git`.
 
-### 2- INstall bundle
+### 2- Install bundle
 
 - Run `bundle install` to install the gems from the `Gemfile`.
 
