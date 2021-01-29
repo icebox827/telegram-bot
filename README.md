@@ -32,7 +32,7 @@ A Telegram Bot built with Ruby
 - Download the [Telegram app](https://desktop.telegram.org/), create an account.
 - Launch  [Botfather](https://t.me/botfather). Follow the instructions to create a bot.
 - You will then receive an API Token that looks like this: `1256478963:BBCHKATY496166theonsgankgngnrorgnorg`
-- Link the token to your bot.
+- Link the token to your bot by creating the .env file in your root directory and then add to token in the variable `TELEGRAM_TOKEN =`
 
 ### 4- Run the bot
 
