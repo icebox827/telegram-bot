@@ -1,9 +1,9 @@
 # rubocop:disable Layout/LineLength
 
 # files
-require_relative 'news'
-require_relative 'motivation'
-require_relative 'inspiration'
+require_relative './news'
+require_relative './motivation'
+require_relative './inspiration'
 # dependencies
 require 'telegram/bot'
 require 'motivational_quotes'
