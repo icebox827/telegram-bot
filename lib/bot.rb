@@ -1,19 +1,20 @@
 # rubocop:disable Layout/LineLength
 
-require_relative 'news'
-require_relative 'motivation'
-require_relative 'inspiration'
+# files
+require_relative './news'
+require_relative './motivation'
+require_relative './inspiration'
+# dependencies
 require 'telegram/bot'
 require 'motivational_quotes'
 require 'dotenv'
+
 Dotenv.load
 
 class NewsBot
   attr_reader :text
 
-  token = '1679520179:AAF3M2uEOFIB-j6sEc4A0vmpBdYuTqF0BFE'
-
-  Telegram::Bot::Client.run(token) do |bot|
+  Telegram::Bot::Client.run(ENV['TELEGRAM_TOKEN']) do |bot|
     bot.listen do |message|
       case message.text
       when '/start'
@@ -30,7 +31,7 @@ class NewsBot
       when '/stop'
         bot.api.send_message(chat_id: message.chat.id, text: 'Bye! See you again.')
       else
-        bot.api.send_message(chat_id: message.chat.id, text: 'Invalid input, , Please enter /start, /stop, /news, /motivation or /inspiration')
+        bot.api.send_message(chat_id: message.chat.id, text: 'Invalid input, , Please enter /start /stop /news /motivation or /inspiration')
       end
     end
   end

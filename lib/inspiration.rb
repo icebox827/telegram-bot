@@ -1,6 +1,6 @@
 # rubocop:disable Layout/LineLength
 
-require_relative 'utils'
+require_relative './utils'
 
 class Inspiration
   include PickOne
