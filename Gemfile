@@ -8,3 +8,7 @@ gem 'dotenv'
 gem 'motivational_quotes', '~> 0.1.2'
 gem 'puma'
 gem 'telegram-bot-ruby'
+# Use postgresql as the database for Active Record
+gem 'pg', '>= 0.18', '< 2.0', group: :production
+# heroku deploy
+gem 'rails_12factor', group: :production

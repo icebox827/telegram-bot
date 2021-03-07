@@ -21,8 +21,14 @@ GEM
     motivational_quotes (0.1.2)
     multipart-post (2.1.1)
     nio4r (2.5.5)
+    pg (1.2.3)
     puma (5.2.1)
       nio4r (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     ruby2_keywords (0.0.4)
     telegram-bot-ruby (0.14.0)
       faraday
@@ -36,12 +42,15 @@ GEM
       equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
   dotenv
   motivational_quotes (~> 0.1.2)
+  pg (>= 0.18, < 2.0)
   puma
+  rails_12factor
   telegram-bot-ruby
 
 RUBY VERSION
