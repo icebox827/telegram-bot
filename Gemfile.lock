@@ -20,16 +20,27 @@ GEM
     inflecto (0.0.2)
     motivational_quotes (0.1.2)
     multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     nio4r (2.5.7)
     pg (1.2.3)
     puma (5.2.2)
       nio4r (~> 2.0)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
     ruby2_keywords (0.0.4)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
     telegram-bot-ruby (0.14.0)
       faraday
       inflecto
       virtus
     thread_safe (0.3.6)
+    tilt (2.0.10)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -44,6 +55,7 @@ DEPENDENCIES
   motivational_quotes (~> 0.1.2)
   pg (>= 0.18, < 2.0)
   puma
+  sinatra
   telegram-bot-ruby
 
 RUBY VERSION
