@@ -20,9 +20,9 @@ GEM
     inflecto (0.0.2)
     motivational_quotes (0.1.2)
     multipart-post (2.1.1)
-    nio4r (2.5.5)
+    nio4r (2.5.7)
     pg (1.2.3)
-    puma (5.2.1)
+    puma (5.2.2)
       nio4r (~> 2.0)
     rails_12factor (0.0.3)
       rails_serve_static_assets
@@ -42,8 +42,7 @@ GEM
       equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
-  ruby
-  x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   dotenv
@@ -57,4 +56,4 @@ RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   2.1.4
+   2.2.13
